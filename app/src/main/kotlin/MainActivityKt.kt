@@ -38,7 +38,7 @@ import com.google.api.client.util.ExponentialBackOff
 import com.google.api.services.calendar.CalendarScopes
 import com.google.api.services.tasks.TasksScopes
 import com.google.android.material.color.DynamicColors;
-import com.itsaky.androidide.logsender.LogSender;
+//import com.itsaky.androidide.logsender.LogSender;
 import com.liandev.materialcalendar.Activity.WelcomeActivity
 import com.liandev.materialcalendar.Database.DatabaseManager
 import com.liandev.materialcalendar.Fragments.CalendarFragment
@@ -81,7 +81,7 @@ public class MainActivityKt : AppCompatActivity() {
          instance = this
          installSplashScreen()
          super.onCreate(savedInstanceState)
-         LogSender.startLogging(this@MainActivityKt)
+        // LogSender.startLogging(this@MainActivityKt)
          
          db = DatabaseManager(this);
          
@@ -92,7 +92,7 @@ public class MainActivityKt : AppCompatActivity() {
 			AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);    
-        }
+       }
          
          DynamicColors.applyIfAvailable(this@MainActivityKt)
          binding = ActivityMainBinding.inflate(layoutInflater); 
