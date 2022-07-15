@@ -1,0 +1,14 @@
+<resources>
+    <!-- Day of the Week -->
+    <string name="monday">월요일</string>
+    <string name="tuesday">월요일</string>
+    <string name="wednesday">월요일</string>
+    <string name="thursday">월요일</string>
+    <string name="friday">월요일</string>
+    <string name="saturday">월요일</string>
+    <string name="sunday">월요일</string>   
+</resources>
+
+
+ 
+

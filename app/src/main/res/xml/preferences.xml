@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <androidx.preference.SwitchPreference
+        android:defaultValue="false"
+        android:key="dark_mode_switch"
+        android:title="@string/dark_mode"
+        android:summary="@string/enable_or_disable_darkmode"        
+         />
+    <androidx.preference.SwitchPreference
+        android:defaultValue="false"
+        android:key="remove_outdated_task_switch"
+        android:title="@string/remove_outdated_tasks"
+        android:summary="@string/remove_outdated_tasks_message"        
+    />
+    <PreferenceCategory>
+   <Preference
+    android:title="@string/logout"
+    android:key="disconnect"/>
+   </PreferenceCategory>
+</androidx.preference.PreferenceScreen>
+
+
+
+
+

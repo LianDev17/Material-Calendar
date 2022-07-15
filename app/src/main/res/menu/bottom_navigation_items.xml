@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/tasks"
+      android:enabled="true"
+      android:icon="@drawable/ic_todo"
+      android:title="@string/tasks"/>
+  <item
+      android:id="@+id/calendar"
+      android:enabled="true"
+      android:icon="@drawable/ic_calendar"
+      android:title="@string/calendar"/>
+</menu>

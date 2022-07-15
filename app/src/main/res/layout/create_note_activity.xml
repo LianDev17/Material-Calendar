@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <com.google.android.material.appbar.AppBarLayout
+            android:fitsSystemWindows="true"
+            android:id="@+id/create_note_appbar_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                style="?attr/collapsingToolbarLayoutLargeStyle"
+                android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/create_note_appbar"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="pin"
+                    app:title="Nouvelle tâche"/>
+                
+            
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            
+        
+        </com.google.android.material.appbar.AppBarLayout>
+        
+        <LinearLayout
+            android:layout_below="@+id/create_task_appbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/note_title_layout"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                android:hint="@string/note_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/note_title"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                
+            
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <com.google.android.material.textfield.TextInputLayout    
+                android:id="@+id/note_description_layout"            
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/note_title_layout"
+                android:hint="@string/note_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                
+                <com.google.android.material.textfield.TextInputEditText
+                    android:gravity="start"
+                    android:id="@+id/note_description"
+                    android:inputType="textMultiLine"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"                   
+                    android:maxLines="5"
+                    android:padding="10dp"/>
+                
+            
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <com.google.android.material.textfield.TextInputLayout                
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/note_description_layout"
+                android:hint="@string/note_secondary_description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                
+                <com.google.android.material.textfield.TextInputEditText
+                    android:gravity="start"
+                    android:id="@+id/note_secondary_description"
+                    android:inputType="textMultiLine"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"                   
+                    android:maxLines="5"
+                    android:padding="10dp"/>
+                
+            
+            </com.google.android.material.textfield.TextInputLayout>
+            
+        
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/create_note_button"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="@string/create"
+            style="?attr/materialButtonOutlinedStyle"/>
+    
+    </LinearLayout>
+    
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

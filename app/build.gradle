@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdk
+    buildToolsVersion rootProject.ext.buildTools
+
+    defaultConfig {
+        applicationId rootProject.ext.appId
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName 
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+    
+    packagingOptions {
+      exclude 'META-INF/DEPENDENCIES'
+    }
+    
+    compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+	
+	lintOptions {
+	    abortOnError false
+    }  
+    
+   buildFeatures {
+     viewBinding = true
+   }
+}
+
+
+
+dependencies {
+ def nav_version = "2.3.4"
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.6.0-alpha04'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation 'com.github.kizitonwose:CalendarView:1.0.4'
+	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0'
+    implementation 'androidx.preference:preference:1.2.0-rc01'
+    implementation 'androidx.core:core-splashscreen:1.0.0-beta01'  
+    implementation 'com.google.android.gms:play-services-auth:20.0.1'
+    implementation 'com.google.http-client:google-http-client-gson:1.26.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation "io.github.yavski:fab-speed-dial:1.0.6"
+  //  implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation('com.google.api-client:google-api-client-android:1.30.4') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation('com.google.apis:google-api-services-tasks:v1-rev46-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation 'com.google.apis:google-api-services-calendar:v3-rev20211026-1.32.1'
+    implementation('com.google.apis:google-api-services-drive:v3-rev136-1.25.0') {
+      exclude group: 'org.apache.httpcomponents'
+  }
+  dependencies {
+    implementation 'com.github.beksomega:loopinglayout:0.4.1'
+   }
+}    

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Important strings-->
+    <string name="app_name">Material Calendar</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="welcome_message">Welcome to Material Calendar ! Create tasks or add events to your calendar.</string>
+    <string name="okay_thanks">Okay, thanks !</string>
+    <string name="hello">Hello !</string>
+    <string name="good_evening">Good evening !</string>
+    <string name="welcome_screen_message">Welcome to Material Calendar !\nLog in with your Google account to continue.</string>
+    <string name="lets_go">Let\'s go !</string>
+    
+    <string name="note_name"></string>
+    <string name="note_description"></string>
+    <string name="note_secondary_description"></string>
+    <string name="note_create_title"></string>
+    <string name="note_edit_title"></string>
+    
+    <!--Event strings-->
+    <string name="calendar">Calendar</string>
+    <string name="event_new">New event</string>
+    <string name="event_name">Event name</string>
+    <string name="event_description">Event description</string>
+    <string name="event_dates_and_hours">Dates and hours</string>
+    <string name="event_create_title">Event creation</string>
+    <string name="new_event_list">Create a list</string>
+
+    <!--Task strings-->
+    <string name="tasks">Tasks</string>
+    <string name="task_new">New task</string>
+    <string name="task_name">Task name</string>
+    <string name="task_description">Task description</string>
+    <string name="task_dates_and_hours">Dates and hours</string>
+    <string name="task_create_title">Task creation</string>
+    <string name="task_end_date">Date</string>
+    <string name="task_end">Task end</string>
+    <string name="task_new_list">New task list</string>
+    <string name="task_ends">Ends</string>
+    <string name="task_tomorrow">tomorrow</string>
+    <string name="task_today">today</string>
+    <string name="task_no_title">No title</string>
+    <string name="finished_tasks">Finished Tasks</string>
+    
+     <!--Error and empty strings-->
+    <string name="no_internet">No Internet connection available. Try again later.</string>
+    <string name="no_internet_message">No Internet connection available. Tasks and Calendar will not be available.</string>
+    <string name="empty_tasks_list">This list is empty, maybe a series to watch ?</string>
+    <string name="empty_calendar_list_message">This day has no event. no birthday to prepare ?</string>
+
+    <!-- Basic strings -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="create">Create</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    
+    <!-- Settings and related-->
+    <string name="settings">Settings</string>
+    <string name="reload">Refresh</string>
+    <string name="about">About</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="enable_or_disable_darkmode">Allow you to have dark mode</string>
+    <string name="remove_outdated_tasks">Delete outdated tasks</string>
+    <string name="remove_outdated_tasks_message">Allows you to delete tasks that have exceeded their end dates</string>
+    <string name="sync_with_google">Synchronization with Google</string>
+    <string name="sync_with_google_message">Synchronization with Google for Tasks and Calendar</string>
+    <string name="sync_with_google_calendar">Synchronization with Calendar</string>
+    <string name="sync_with_google_calendar_message">Synchronization with Calendar for your events</string>
+    <string name="sync_with_google_tasks">Synchronization with Tasks</string>
+    <string name="sync_with_google_tasks_message">Synchronization with Calendar for your tasks</string>
+    <string name="logout">Log out</string>
+    <!--Other-->
+    <string name="default_web_client_id">1024726653943-ugc34fgnc61gtuj87filrss7iq5cssvc.apps.googleusercontent.com</string>
+    
+</resources>

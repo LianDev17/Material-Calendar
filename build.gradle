@@ -1,0 +1,51 @@
+buildscript {
+    ext {
+		build_gradle_version = '7.0.2'
+		kotlin_version = '1.6.0'
+		}	
+    
+    project.ext {
+    	compileSdk = 31
+        buildTools = "31.0.0"
+        appId = "com.liandev.materialcalendar"
+        minSdk = 25
+        targetSdk = 30
+        versionCode = 37
+		versionName = "0.3.7." + new java.util.Date().getTime() + "-bêta"
+    }
+    
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        maven { url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1' }
+        maven { url "https://clojars.org/repo/" }
+        maven { url "https://jitpack.io" }
+        google()
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$build_gradle_version"
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.novoda:bintray-release:0.9.2'
+    }
+    
+}
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }   
+        maven { url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1' }
+        maven { url "https://clojars.org/repo/" }
+        maven { url "https://jitpack.io" }
+        google()
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

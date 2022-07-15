@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    
+
+   <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        style="?attr/materialCardViewFilledStyle">
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+                
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Faire mon devoir de Ses"
+                    android:textAppearance="?attr/textAppearanceTitleLarge"/>
+                
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Faire Exposé Anglais sur Gap Year"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"/>
+                
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:text="Fin dans 2j3h"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"/>
+                
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+                
+                <com.google.android.material.button.MaterialButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Terminer"/>
+                
+            
+            </LinearLayout>
+        </LinearLayout>
+    
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+
+

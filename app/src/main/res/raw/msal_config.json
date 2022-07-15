@@ -1,0 +1,17 @@
+{
+  "client_id" : "8fd4a42b-edbb-42d6-9d4f-a2f7b65c0057",
+  "redirect_uri" : "msauth://com.liandev.materialcalendar/callback",
+  "broker_redirect_uri_registered": false,
+  "account_mode": "SINGLE",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADandPersonalMicrosoftAccount"
+      },
+      "default": true
+    }
+  ]
+}
+
+

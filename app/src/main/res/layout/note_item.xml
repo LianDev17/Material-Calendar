@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity">
+    
+    <com.google.android.material.card.MaterialCardView
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/note_cardView"
+        android:layout_height="wrap_content"       
+        android:layout_width="match_parent"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:theme="@style/Theme.Material3.DayNight"
+        app:shapeAppearanceOverlay="@style/Widget.App.CardView">
+       
+         <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"           
+            app:layout_constraintTop_toTopOf="parent"            
+            >
+            
+            <androidx.constraintlayout.widget.ConstraintLayout 
+                android:id="@+id/fixed_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                >
+                
+                <TextView
+                    android:id="@+id/note_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"/>
+                
+                <ImageButton
+                    android:id="@+id/arrow_button"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_chevron_down"
+                    android:background="@drawable/image_button_rounded"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                
+            
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <LinearLayout
+                android:id="@+id/hidden_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/note_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fixed_layout"
+                android:paddingBottom="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp">
+                
+                <TextView
+                    android:id="@+id/note_description"
+                    android:layout_below="@+id/event_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"/>
+                
+                <TextView
+                    android:id="@+id/note_secondary_description"
+                    android:layout_below="@+id/event_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"/>
+                
+            
+            </LinearLayout>
+            
+        
+       </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    
+    </com.google.android.material.card.MaterialCardView>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

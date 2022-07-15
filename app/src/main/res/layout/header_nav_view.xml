@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HeaderNavView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="256dp"
+        app:cardElevation="0dp" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_picture"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_empty_account" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvName_HeaderNavView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_HeaderNavView"
+        android:layout_marginStart="16dp"
+        android:text="Example Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEmail_HeaderNavView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName_HeaderNavView"
+        android:layout_marginStart="16dp"
+        android:text="example@gmail.com"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail_HeaderNavView"
+        android:layout_marginTop="12dp"
+        app:dividerColor="@android:color/darker_gray"
+        app:dividerThickness="0.8dp" />
+
+</RelativeLayout>

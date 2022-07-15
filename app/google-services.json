@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1024726653943",
+    "project_id": "materialcalendar182022",
+    "storage_bucket": "materialcalendar182022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024726653943:android:3890b75ab2439b6489acf2",
+        "android_client_info": {
+          "package_name": "com.liandev.materialcalendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024726653943-rvt2u4s8l300i8f5dl6k6g0rp7qqsfss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liandev.materialcalendar",
+            "certificate_hash": "cee0a91f1ff5c342e302f819a292a9095d6ba02d"
+          }
+        },
+        {
+          "client_id": "1024726653943-cpor1dnd6u9kcef4pb315ehltveu5f7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTLzXJLFKhU-Bkl00PuN6M_nOMZuYjI8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024726653943-cpor1dnd6u9kcef4pb315ehltveu5f7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
