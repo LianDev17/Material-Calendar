@@ -3,8 +3,6 @@ Material Calendar
 
 Welcome to Material Calendar, a Calendar and Tasks app with Material 3
 
-$
-
 • App features 
 
  - Manage your tasks (create, edit and delete tasks | create task lists) simply 
