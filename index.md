@@ -1,24 +1,26 @@
-
-Material Calendar
+## Material Calendar
 
 Welcome to Material Calendar, a Calendar and Tasks app with Material 3
 
+
+
+
+```markdown
 • App features 
 
  - Manage your tasks (create, edit and delete tasks | create task lists) simply 
  - Manage your events with a infinite vertical calendar
  - Automatically delete tasks that are outdated (optional)
  - Dark Mode
+```
 
+## Current and upcoming features
+   - [x] Create, edit and delete tasks
+   - [x] Create, edit and delete task lists*
+   - [ ] Restore deleted tasks screen
 
-
-Current and upcoming features
-• [x] Create, edit and delete tasks
-• [x] Create, edit and delete task lists*
-• [ ] Restore deleted tasks screen
 
 (* means the feature is not fully implemented.)
 
-$
-
-A question, an idea, a problem ? Please tell us on Telegram or Email .
+-------
+A question, an idea, a problem ? Please tell us on [Telegram](https://t.me/materialcalendar) or [Email](liandevapp@gmail.com).
