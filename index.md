@@ -1,27 +1,26 @@
-## Welcome to GitHub Pages
+## Material Calendar
 
-You can use the [editor on GitHub](https://github.com/LianDev17/Material-Calendar/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Welcome to Material Calendar, a Calendar and Tasks app with Material 3
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-App features 
+• App features 
 
- - Manage your **tasks** (create, edit and delete tasks | create task lists) simply 
- - Manage your **events** with a infinite vertical calendar
-
+ - Manage your tasks (create, edit and delete tasks | create task lists) simply 
+ - Manage your events with a infinite vertical calendar
+ - Automatically delete tasks that are outdated (optional)
+ - Dark Mode
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+###Current and upcoming features
+- [x] Create, edit and delete tasks
+- [x] Create, edit and delete task lists*
+- [ ] Restore deleted tasks screen
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LianDev17/Material-Calendar/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+(* means the feature is not fully implemented.)
 
-### Support or Contact
-
+-------
 A question, an idea, a problem ? Please tell us on [Telegram](https://t.me/materialcalendar) or [Email](liandevapp@gmail.com).
